@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <style>
+    .slide_total{
+        width: 100vw;
+        height: 90vh;
+        display: flex;
+        justify-content: flex-start;
+        overflow: hidden;
+   
+    }
+    .slide_move{
+        width: 300vw;
+    display: flex;
+
+    transition: transform 1s;
+
+    }
+    .main{
+position: relative;
+    }
+    .slide_img{
+            width: 100vw;
+            height: 90vh;
+
+
+        }
+
+      
+      .slide_ui{
+        position: absolute;
+        top : 15rem;
+        left : 45rem;
+      }
+      
+.titleSlide{
+    font-size: 3rem;
+
+}
+      .slide_btn1{
+        margin-top: 6.5rem;
+        background-color:transparent;
+        width: 16vw;
+        height: 7vh;
+        margin-left: 3rem;
+        border: solid 4px white;
+        color: white;
+        font-size: 1.7rem;
+
+      }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <div class="logo">
+                <h3>Bs_studio</h3>
+                <h3>CORPORATION</h3>
+            </div>
+   <ul class="menu-bar">
+        <li><a href="메뉴1의_주소">메뉴1</a></li>
+        <li><a href="메뉴2의_주소">메뉴2</a></li>
+        <li><a href="메뉴3의_주소">메뉴3</a></li>
+        <li><a href="메뉴4의_주소">메뉴4</a></li>
+        <li><a href="메뉴5의_주소">메뉴5</a></li>
+    </ul>
+        </div>
+     
+ 
+        <div class="slide_move">
+    
+            <div class="slide_total">
+                <div class="main">
+                <img src="slide1.jpg" alt="tema" class="slide_img">
+                <div class="slide_ui">
+                    <h1 class="titleSlide">about 대림</h1>
+                    <h1>떙떙덍렝은 석유화학,물류,it서비스,개발사업을 수행하는<br>
+                        전문기업으로 지속적인 성장과 차별화 된 고객가치를 실현하고 있습니다</h1>
+                        <button type="button" class="slide_btn1" onclick="location.href='#';">VIEW</button>
+                </div>
+            </div>
+            <div class="main">
+                <img src="slide2.jpg" alt="tema" class="slide_img">
+                <div class="slide_ui">
+                    <h1 class="titleSlide">about 대림</h1>
+                    <h1>떙떙덍렝은 석유화학,물류,it서비스,개발사업을 수행하는<br>
+                        전문기업으로 지속적인 성장과 차별화 된 고객가치를 실현하고 있습니다</h1>
+                        <button type="button" class="slide_btn1" onclick="location.href='#';">VIEW</button>
+                </div>
+            </div>
+            <div class="main">
+                <img src="slide3.jpg" alt="tema" class="slide_img">
+                <div class="slide_ui">
+                    <h1 class="titleSlide">about 대림</h1>
+                    <h1>떙떙덍렝은 석유화학,물류,it서비스,개발사업을 수행하는<br>
+                        전문기업으로 지속적인 성장과 차별화 된 고객가치를 실현하고 있습니다</h1>
+                        <button type="button" class="slide_btn1" onclick="location.href='#';">VIEW</button>
+                </div>
+            </div>
+
+        </div>
+      
+   
+    </div>
+    
+
+    </header>
+    <section>
+        <div class="notice_area">
+         <div class="notice_title">
+         
+            <ul>
+                <li class="n_title">2006~</li>
+                <li class="n_body">회사소개</li>
+                <li class="n_body1">떄얘얘얭은 글로벌 디벨로퍼의 <br/>
+                    미래모습을 구현하기 위해 노력하고 있습니다
+                </li>
+            </ul>
+
+
+        </div>
+        <div class="notice_title1">
+            <ul>
+                <li class="n1_title">재무정보</li>
+                <li>재무정보를 정확하게 <br/> 제공해드립니다</li>
+
+            </ul>
+        </div>
+        <div class="notice_title2">
+            <ul>
+                <li class="n2_title">인재채용</li>
+                <li>전세계를 향해 도전할수 있는 <br/>글로벌 인재를 모십니다</li>
+
+            </ul>
+     
+
+
+
+        </div>
+
+        </div>
+        <div class="notice_body">
+            <h2 class="notice_subtitle">회사소식</h2>
+            <div class="notice_box">
+                <div class="" id ="box_1">
+
+                </div>
+                <div  id="box_1">
+
+                </div>
+            </div>
+       
+        </div>
+    </section>
+    <footer>
+        <div class="footer_main">
+
+        </div>
+    </footer>
+    <script>
+        const sliderMove = document.querySelector('.slide_move');
+        const slider = document.querySelectorAll('.slide_img');
+    
+     
+        let counter = 0;
+      
+
+        setInterval(() => {
+        
+   
+          if(counter === slider.length - 1) {
+       
+            counter = 0;
+        
+
+            } else {
+                counter++;
+           
+           
+           
+             
+            }
+         
+            sliderMove.style.transform = `translateX(-${counter * 100}vw)`;
+         
+        }, 3000);
+    </script>
+    
+</body>
+</html>

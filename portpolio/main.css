@@ -1,0 +1,203 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/**/
+/* ( 크롬, 사파리, 오페라, 엣지 ) 동작 */
+::-webkit-scrollbar {
+    display: none;
+  }
+*{
+    -ms-overflow-style: none; /* 인터넷 익스플로러 */
+    scrollbar-width: none; /* 파이어폭스 */
+  }
+
+  @font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/**/
+body{
+    font-family: 'GmarketSansMedium';
+}
+.menu{
+    background-color: #1C273D;
+    width: 100vw;
+    height: 10vh;
+}
+ul.menu-bar {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    margin-left: 30vw;
+}
+
+ul.menu-bar li {
+    margin-top: -3.5rem;
+}
+ul.menu-bar li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 1.2rem 1.6rem;
+    display: block;
+    font-size: 1.4rem;
+}
+.logo{
+  margin-left: 3.2rem;
+  padding: 0.8rem;
+}
+
+.logo h3{
+    color:white;
+    font-size: 1.3rem;
+}
+
+.notice_area{
+    display: flex;
+    flex-direction: column;
+    width: 30vw; height: 70vh;
+}
+.notice_title{
+    background-color: #2C53B0;
+    width: 30vw; height: 30vh;
+    position: relative;
+}
+section{
+    display: flex;
+}
+
+.notice_title ul li{
+ text-align: end;
+    color: white; margin-top: 1.5rem;
+    margin-right: 2rem;
+}
+.notice_title ul li:nth-child(1){
+font-size: 2.5rem;
+}
+.notice_title ul li:nth-child(2){
+    font-size: 1.5rem;
+   
+    }
+ .notice_title ul li:nth-child(3){
+        font-size: 1rem; 
+ }
+ .notice_title1{
+    background-color: #2C53B0;
+    width: 30vw; height: 20vh;
+    position: relative;
+    border-top: 1px solid gray;
+}
+
+.notice_title1 ul li{
+    text-align: end;
+       color: white; margin-top: 1.5rem;
+       margin-right: 2rem;
+   }
+.notice_title1 ul li:nth-child(1){
+    font-size: 1.4rem;
+    }
+.notice_title1 ul li:nth-child(2){
+        font-size: 1rem;
+       
+}
+
+
+.notice_title2{
+    background-color: #2C53B0;
+    width: 30vw; height: 20vh;
+    position: relative;
+    border-top: 1px solid gray;
+}
+
+.notice_title2 ul li{
+    text-align: end;
+       color: white; margin-top: 1.5rem;
+       margin-right: 2rem;
+   }
+.notice_title2 ul li:nth-child(1){
+    font-size: 1.4rem;
+    }
+.notice_title2 ul li:nth-child(2){
+        font-size: 1rem;
+       
+}
+
+
+.notice_body{
+    width: 70vw; height: 70vh;
+    background-color: #F5F5F5;
+
+}
+.notice_subtitle{
+    margin-left: 5.5rem;
+    margin-top: 2rem;
+    font-size: 2rem;
+}
+.notice_box{
+    margin-left: 2.5rem;
+    display: flex;
+    flex-direction: row;
+}
+
+#box_1{
+
+    background-color: white;
+    width: 28vw;
+    height: 32vh;
+    border: solid 1px #666464d4;
+    margin: 2.5rem 2.5rem;
+}
+
+
+/**/
+.footer_main{
+    width: 100vw; height: 30vh;
+    background-color: black;
+}
